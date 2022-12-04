@@ -29,7 +29,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-
+// new shit lol
 
 Route::get('/profile/{user}', [ProfilesController::class, 'index'])->name('profile.show');
 
