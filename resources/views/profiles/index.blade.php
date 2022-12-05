@@ -17,7 +17,7 @@
                 <div class="px-6 text-l text-gray-900 dark:text-gray-100">{{ $user->profile->description }}</div>
                 <div class="px-6 text-l text-gray-900 dark:text-gray-100">{{ $user->profile->url }}</div>
 
-                <a href="http://lolz.com" target="_blank" rel="noopener noreferrer">sdf</a>
+                <a href="http://lolz.com" target="_blank" rel="noopener noreferrer" class="text-gray-900 dark:text-gray-100">Link  new</a>
 
 
                 <ul role="list" class="m-8 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">

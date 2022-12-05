@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProfilesController;
+use App\Http\Controllers\PostsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,8 +30,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-// new shit lol
-
 Route::get('/profile/{user}', [ProfilesController::class, 'index'])->name('profile.show');
+
+Route::get('/p/create', [PostsController::class, 'create']);
 
 require __DIR__.'/auth.php';
